@@ -15,40 +15,29 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <section id="header" class="wrapper" style="background: url(images/golfbg.png) center center; background-repeat: no-repeat;background-size: 100% auto">
+        <section id="header" class="wrapper" style="background: url(images/pdpg_bg.png) center center; background-repeat: no-repeat;background-size: 100% auto">
 
             <!-- Logo -->
             <div id="logo">
-                <h1>Golf Mountain</h1>
-                <p>A GCSE videogame project.</p>
+                <h1>Player Driven Procedural Generation</h1>
+                <p>A dissertation project to involve player input towards 2D world generation.</p>
             </div>
 
             <!-- Nav -->
             <nav id="nav">
                 <ul>
                     <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="index.html#intro">About Me</a></li>
+                    <li><a href="index.html#main">Portfolio</a></li>
                     <li>
                         <a href="#">Projects</a>
                         <ul>
-                            <li><a href="#">Project 1</a></li>
-                            <li><a href="#">Project 2</a></li>
-                            <li><a href="#">Project 3</a></li>
-                            <li>
-                                <a href="#">Group Projects</a>
-                                <ul>
-                                    <li><a href="#">Project 1</a></li>
-                                    <li><a href="#">Project 2</a></li>
-                                    <li><a href="#">Project 3</a></li>
-                                    <li><a href="#">Project 4</a></li>
-                                    <li><a href="#">Project 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Ongoing Projects</a></li>
+                            <li><a href="zipzap.html">Project ZipZap</a></li>
+                            <li><a href="generation.html">Procedural Generation</a></li>
+                            <li><a href="modelling.html">3D Modelling</a></li>
                         </ul>
                     </li>
-                    <li><a href="left-sidebar.html">Other Site 1</a></li>
-                    <li><a href="right-sidebar.html">Other Site 2</a></li>
-                    <li><a href="no-sidebar.html">Other Site 3</a></li>
+                    <li><a href="#footer">Contacts</a></li>
                 </ul>
             </nav>
 
@@ -56,15 +45,20 @@
 
         <!-- Intro -->
         <section id="intro" class="wrapper style1">
-            <div class="title">About The Game</div>
+            <div class="title">About The System</div>
             <div class="container">
                 <p class="style3">
-                    <img src="images/golficon_circle.png" width=30%>
+                    <img src="images/pdpgicon_circle.png" width=30%>
                 </p>
                 <div class="section-heading-separator"></div>
                 <p class="style3">
-                    Golf Mountain is my first videogame that I had ever made. 
-                    It is a Foddian inspired game in which the player hits a golf ball up a 2D platforming mountain to reach the end.
+                    For my dissertation project, the bridge between game world generation and player input is made.
+                    Instead of 2D tile based games generating worlds through their own designs alone, this system allows players to influence the steps to adhear to their preferences and tastes.
+                    A canvas is presented to the user to paint their desired biome layout entales, for it to then be extrapolated via Wave Function Collapse to produce a larger scale implementation.
+                    This gets fed through a multitude of generative processes such as perlin noise, random step, worley noise, voronois, cellular automata and more...
+                    The biome based locations dictate the tiles used, the structures allowed, the fluids simulated, and general composition.
+                    All these steps produce a cohesive layout that was orchestrated by the player but managed by the system.
+                    Not to overlook the complete customisation of all generative values such as the tunnel length, size, and angles, the biome tile sizes, the biome transition styles, and many others.
                 </p>
             </div>
         </section>
@@ -74,7 +68,11 @@
             <div class="title">Screenshots and Videos</div>
             <div class="container">
                 <p class="style3">
-                    <img src="images/golftop.png" width=50%><img src="images/golfmenu.png" width=50%>
+                <iframe width=100% height="720" src="https://www.youtube.com/embed/la9h4L493ao" title="" frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <img src="images/pdpg_gen.png" width=100%>
+                <img src="images/pdpgposter.png" width=100%>
+                <embed src="embeds/pdpg.pdf" width=100% height="800" type="application/pdf">
                 </p>
             </div>
         </section>
